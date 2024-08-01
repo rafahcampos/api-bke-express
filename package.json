@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "API Node com framework Express",
   "main": "src/server.js",
+  "type": "module" ,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js" ,
+    "dev": "node --watch src/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/rafahcampos/api-bke-express/issues"
   },
-  "homepage": "https://github.com/rafahcampos/api-bke-express#readme"
+  "homepage": "https://github.com/rafahcampos/api-bke-express#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
