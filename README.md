@@ -23,3 +23,5 @@ npm unistall #desistala os pacotes
 npm run nome-do-script #executa um script do packet.json
 
 ```
+
+#Apidog //testa API em nuvem
