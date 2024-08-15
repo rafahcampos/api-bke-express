@@ -25,3 +25,10 @@ npm run nome-do-script #executa um script do packet.json
 ```
 
 #Apidog //testa API em nuvem
+
+```
+### Prisma
+
+npm i prisma -D (instala prisma como dependência de desenvolvimento)
+npx prisma init (inicializa o prisma no projeto prisma/schema.prisma e .env)
+```

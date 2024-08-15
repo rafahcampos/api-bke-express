@@ -4,6 +4,7 @@ import userById from "../controllers/user/userById.js";
 import createUser from "../controllers/user/createUser.js";
 import editUser from "../controllers/user/editUser.js";
 import editNameUser from "../controllers/user/editNameUser.js";
+import deleteUser from "../controllers/user/deleteUser.js";
 
 const router = express.Router(); //criando o roteador
 

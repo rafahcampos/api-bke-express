@@ -1,0 +1,71 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "user",
+    "collectionId": "eb4f1687-fecf-4bd4-97ad-7ab7110963e5",
+    "dateExported": "2024-08-14T23:14:24.704Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6db02172-73d3-4e74-a77f-5630a1b6bf16",
+            "colId": "eb4f1687-fecf-4bd4-97ad-7ab7110963e5",
+            "containerId": "",
+            "name": "/user/list",
+            "url": "{{BASE_URL}}/user",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-14T23:05:50.015Z",
+            "modified": "2024-08-14T23:12:19.936Z",
+            "headers": []
+        },
+        {
+            "_id": "a8bfe7a0-1066-4e8a-9d93-a5269f5939ab",
+            "colId": "eb4f1687-fecf-4bd4-97ad-7ab7110963e5",
+            "containerId": "",
+            "name": "/user/list",
+            "url": "{{BASE_URL}}/user",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-14T23:12:24.591Z",
+            "modified": "2024-08-14T23:12:36.722Z",
+            "headers": []
+        },
+        {
+            "_id": "a340d20b-1cdf-4b4d-a122-3d7511e2fcbc",
+            "colId": "eb4f1687-fecf-4bd4-97ad-7ab7110963e5",
+            "containerId": "",
+            "name": "/user/list",
+            "url": "{{BASE_URL}}/user",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-08-14T23:12:51.144Z",
+            "modified": "2024-08-14T23:12:55.721Z",
+            "headers": []
+        },
+        {
+            "_id": "5a50eebe-3351-42b5-a683-2f5808812416",
+            "colId": "eb4f1687-fecf-4bd4-97ad-7ab7110963e5",
+            "containerId": "",
+            "name": "/user/list",
+            "url": "{{BASE_URL}}/user",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-08-14T23:12:58.519Z",
+            "modified": "2024-08-14T23:13:17.753Z",
+            "headers": []
+        },
+        {
+            "_id": "5dfca70b-584c-4e3b-b7d9-3f3f9c26d7f3",
+            "colId": "eb4f1687-fecf-4bd4-97ad-7ab7110963e5",
+            "containerId": "",
+            "name": "/user/list",
+            "url": "{{BASE_URL}}/user",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-08-14T23:13:19.440Z",
+            "modified": "2024-08-14T23:13:33.647Z",
+            "headers": []
+        }
+    ],
+    "ref": "5L3zubj2QYnINPe3Fu-bcx_cl1yXNoebT1o11nChyw-bLI6ZHfTh4j9wHP1arQq9iaxX-mCP-dKqeYeCB5y0yg"
+}
