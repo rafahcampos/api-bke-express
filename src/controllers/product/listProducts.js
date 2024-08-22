@@ -1,8 +1,7 @@
-//import {getAll} from "../../models/productModel.js";
+import {getAll} from "../../models/productModel.js";
 
 const listProducts = async (req, res) => {
-    //const products = await getAll();
-    const products = [];
+    const products = await getAll();
     res.json(products);
 };
 
