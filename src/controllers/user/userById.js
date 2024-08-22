@@ -1,5 +1,19 @@
-const userById = (req, res) => {
-  res.json({message: "Rota GET/Get User By Id"})
+import { getById } from "../../models/userModel.js";
+
+const userById = async (req, res) => {
+  const { id } = req.params
+
+  const user = await getById(+id)
+
+  if (user)
+    return res.json({
+      message: "User get by id",
+      user
+    })
+  else
+    return res.status(400).json({
+      error: "Usuário não encontrado"
+    })
 };
 
 export default userById;
