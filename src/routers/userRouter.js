@@ -8,12 +8,14 @@ import deleteUser from "../controllers/user/deleteUser.js";
 
 const router = express.Router(); //criando o roteador
 
+
+
 router.get('/', (req, res) => {
     res.json('Rota GET no /user')
   })
   
-  router.get('/:id', userById);
   router.get('/list', userList)
+  router.get('/:id', userById);
   router.post('/', createUser)
   router.put('/:id', editUser);
   router.patch('/:id', editNameUser);

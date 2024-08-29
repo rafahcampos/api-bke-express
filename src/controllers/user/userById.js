@@ -11,7 +11,7 @@ const userById = async (req, res) => {
       user
     })
   else
-    return res.status(400).json({
+    return res.status(404).json({
       error: "Usuário não encontrado"
     })
 };
