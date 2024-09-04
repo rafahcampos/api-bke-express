@@ -10,7 +10,7 @@ const editUser = async (req, res) => {
 
     if (!result)
         return res.status(401).json({
-            erro: "Erro ao criar usuário"
+            erro: "Erro ao editar o usuário"
         })
 
     return res.json({

@@ -43,7 +43,7 @@ export const create = async (user) => {
 }
 
 export const remove = async (id) => {
-    const user = await prisma.user.delete({
+    const result = await prisma.user.delete({
         where: {
             id
         },
