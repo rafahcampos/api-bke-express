@@ -36,6 +36,7 @@ export const validateUser = (user) => {
     return userSchema, safeParse(user)
 }
 
+//ID fica opcional quando se usa o partial
 export const validateUserToCreate = (user) => {
     const partialUserSchema = userSchema.partial({
         id: true
