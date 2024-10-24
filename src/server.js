@@ -6,21 +6,25 @@ import logger from "./middlewares/logger.js";
 import welcome from "./controllers/welcome.js";
 import routeNotFounded from "./controllers/routeNotFounded.js";
 import errorHandler from "./middlewares/errorHandler.js";
+import cors from 'cors'
 
 //middleware que converte o request body jsoon para o objeto
 const app = express();
 app.use(logger);
+app.use(cors())
 //app.use('/product',logger) //regra para dizer se queremos ou não que passe por essa rota
 //express.json( )  vai converter um json do request e vai fazer o parse para um ojeto e joga dentro do req e vai fazer o next
 app.use(express.json()); //Vai fazer o Parse antes de colocar no req
 
 app.get('/',welcome)
-
 app.use('/user', userRouter); //quando entrar na pasta usar, irei chamar o useRouter.
-//app.use('/product',logger, productRouter); //podemos disparar uma sequencia de middleware
+//app.use('/product',logger, productRouter); //podemos disparar uma sequencia de middleware// app.use('/product',logger, productRouter);
 
-app.use('/product',logger, productRouter);
-app.use('*', routeNotFounded);
+app.get('/', welcome)
+app.use('/user', userRouter)
+app.use('/product', productRouter)
+app.use('*', routeNotFounded)
+
 app.user(errorHandler);
 
 app.listen(PORT, () => {

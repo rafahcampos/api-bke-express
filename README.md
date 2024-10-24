@@ -1,34 +1,33 @@
-#Comandos
+# Comandos
 
-###Node
-
-```
-nove -v #verifica a versão do node
-npn init #cria o package json
-```
+### Node
 
 ```
-git config --global user.name "Nome"
-git config --global user.email "Email"
-git remote add origin https://github.com/rafahcampos/seu-projeto.git
+node -v #verifica versão do node
+npm -v #verifica versão do npm
+npm init #cria o package json
+npm i #instala todas as dependências listadas no package.json
+npm i nome-do-pacote #instala pacotes
+npm uninstall #desinstala os pacotes
+npm run nome-do-script #executa um script do package.json
+npm start #executa o script start do package.json
 ```
 
-```
-npm install ou npm i -> instala novamente todos os modulos e dependencias
-
-#Para execultar um comando no node:
-node <caminho do arqivo> (exemplo) -> node src/server.js
-
-npm unistall #desistala os pacotes
-npm run nome-do-script #executa um script do packet.json
+### Git
 
 ```
-
-#Apidog //testa API em nuvem
-
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@gmail.com"
+git remote add origin https://github.com/seugithub/seuprojeto.git
 ```
+
 ### Prisma
 
+```
 npm i prisma -D (instala prisma como dependência de desenvolvimento)
 npx prisma init (inicializa o prisma no projeto prisma/schema.prisma e .env)
+npm install @prisma/client (Instala o cliente do prisma para importação no model)
+npx prisma db pull (gera o modelo a partir do banco criado)
+npx prisma db push (gera o banco a partir do modelo)
+npx prisma generate (cria as classes baseadas no modelo atual)
 ```
