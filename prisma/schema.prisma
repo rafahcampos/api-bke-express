@@ -17,7 +17,8 @@ model user {
 
 model product {
   id         Int     @id @default(autoincrement())
-  nome       String  @db.VarChar(200)
+  public_id String  @unique @db.VarChar(300)
+  name       String  @db.VarChar(200)
   preco      Decimal @db.Decimal(10, 2)
   quantidade Int
 }

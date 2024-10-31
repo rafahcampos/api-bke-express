@@ -30,4 +30,8 @@ npm install @prisma/client (Instala o cliente do prisma para importação no mod
 npx prisma db pull (gera o modelo a partir do banco criado)
 npx prisma db push (gera o banco a partir do modelo)
 npx prisma generate (cria as classes baseadas no modelo atual)
+
+#Após alterações no prisma 
+npm run prisma:local:push
+npm run prisma:local:generate
 ```

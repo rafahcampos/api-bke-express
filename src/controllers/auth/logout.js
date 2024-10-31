@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt'
 
 
 
-const createUser = async (req, res, next) => {
+const logout = async (req, res, next) => {
     try {
 
         const user = req.body;
@@ -40,4 +40,4 @@ const createUser = async (req, res, next) => {
         next(error)
     }
 }
-export default createUser;
+export default logout;

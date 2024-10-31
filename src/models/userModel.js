@@ -44,6 +44,15 @@ export const validateUserToCreate = (user) => {
     return schemaUserSchema.safeParse(user)
 }
 
+export const validateUserToLogin = (user) => {
+    const partialUserSchema = userSchema.partial({
+        email: true,
+        name:true
+    })
+    return schemaUserSchema.safeParse(user)
+}
+
+
 
 export const getAll = async () => {
     const users = await prisma.user.findMany({
@@ -68,6 +77,15 @@ export const getById = async (id) => {
             name: true,
             email: true,
 
+        }
+    })
+    return user
+}
+
+export const getByEmail = async (email) => {
+    const user = await prisma.user.findUnique({
+        where: {
+            email
         }
     })
     return user
